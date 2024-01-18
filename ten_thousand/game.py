@@ -1,4 +1,7 @@
 from ten_thousand.game_logic import Game
+# need to import GameLogic from game_logic.py?
+
+# dice_roller = GameLogic.roll_dice -- need for lab 8?
 
 def main():
     print("Welcome to Ten Thousand!")

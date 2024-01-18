@@ -5,7 +5,7 @@
 ### Author: Armando Bugarin & DeAndre Ordonez (lab partner)
 
 #### Tests
-- **How do you run tests?** pytest
+- **How do you run tests?** `pytest`
 - **All 62 tests pass**
 - **Two tests had a warning**
 
