@@ -17,7 +17,7 @@
 ### Author: Armando Bugarin DeAndre Ordonez (lab partner)
 
 #### Tests
-- **How do you run tests?** pytest and python -m ten_thousand.game
+- **How do you run tests?** `pytest` and `python -m ten_thousand.game`
 - **All 62 tests pass**
 - **Two tests had a warning**
 - **Dice game working visually**
