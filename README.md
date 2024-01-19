@@ -31,5 +31,3 @@
 #### Tests
 - **How do you run tests?** `pytest` and `python3 -m ten_thousand.game`
 - **All 62 tests pass**
-- **Two tests had a warning**
-- **Dice game working visually**
