@@ -3,49 +3,49 @@
 import random  # Import the random module to generate random dice values
 from collections import Counter
 
-class Game:
-    def __init__(self):
-        self.total_score = 0
-        self.current_round = 1
-        self.current_score = 0
-        self.dice_to_set_aside = set()
+# class Game:
+    # def __init__(self):
+    #     self.total_score = 0
+    #     self.current_round = 1
+    #     self.current_score = 0
+    #     self.dice_to_set_aside = set()
 
-    def start_round(self):
-        print(f"Starting Round {self.current_round}")
-        self.dice_to_set_aside.clear()
-        self.current_score = 0
+    # def start_round(self):
+    #     print(f"Starting Round {self.current_round}")
+    #     self.dice_to_set_aside.clear()
+    #     self.current_score = 0
 
-    def roll_dice(self, num_dice):
-        dice_values = GameLogic.roll_dice(num_dice)
-        print(f"Rolled dice: {dice_values}")
-        return dice_values
+    # def roll_dice(self, num_dice):
+    #     dice_values = GameLogic.roll_dice(num_dice)
+    #     print(f"Rolled dice: {dice_values}")
+    #     return dice_values
 
-    def set_aside(self, dice_values):
-        self.dice_to_set_aside.update(dice_values)
-        print(f"Setting aside dice: {self.dice_to_set_aside}")
+    # def set_aside(self, dice_values):
+    #     self.dice_to_set_aside.update(dice_values)
+    #     print(f"Setting aside dice: {self.dice_to_set_aside}")
 
-    def calculate_score_and_bank(self):
-        round_score = GameLogic.calculate_score(tuple(self.dice_to_set_aside))
-        self.current_score += round_score
-        self.total_score += self.current_score
-        print(f"Current Round Score: {self.current_score}")
-        print(f"Total Score: {self.total_score}")
+    # def calculate_score_and_bank(self):
+    #     round_score = GameLogic.calculate_score(tuple(self.dice_to_set_aside))
+    #     self.current_score += round_score
+    #     self.total_score += self.current_score
+    #     print(f"Current Round Score: {self.current_score}")
+    #     print(f"Total Score: {self.total_score}")
 
-    def next_round_or_quit(self):
-        choice = input("Do you want to (r)oll again, (b)ank the current score, or (q)uit? ").lower()
-        if choice == 'r':
-            self.current_round += 1
-            return True
-        elif choice == 'b':
-            self.current_round += 1
-            self.current_score = 0
-            return True
-        elif choice == 'q':
-            print(f"Thanks for playing! Total Score: {self.total_score}")
-            return False
-        else:
-            print("Invalid choice. Please enter 'r', 'b', or 'q'.")
-            return True
+    # def next_round_or_quit(self):
+    #     choice = input("Do you want to (r)oll again, (b)ank the current score, or (q)uit? ").lower()
+    #     if choice == 'r':
+    #         self.current_round += 1
+    #         return True
+    #     elif choice == 'b':
+    #         self.current_round += 1
+    #         self.current_score = 0
+    #         return True
+    #     elif choice == 'q':
+    #         print(f"Thanks for playing! Total Score: {self.total_score}")
+    #         return False
+    #     else:
+    #         print("Invalid choice. Please enter 'r', 'b', or 'q'.")
+    #         return True
 
 class GameLogic:
     @staticmethod
